@@ -11,66 +11,97 @@
   </head>
   <body>
     <div class="header">
-      <img id="logo" src="images/logo.png" alt="TradeWise logo" />
+      <a href="index.html"
+        ><img id="logo" src="images/logo.png" alt="TradeWise logo"
+      /></a>
       <div class="header-right">
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="trading-tools.html">Trading Tools</a>
-        <a href="contacts.html">Contact</a>
+        <a id="about-button" href="about.html">About Us</a>
+        <a id="services-button" href="services.html">Services</a>
+        <a id="trading-button" href="trading-tools.html">Trading Tools</a>
+        <a id="contacts-button" href="contacts.html">Contact</a>
       </div>
     </div>
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 29%,
+            rgba(0, 0, 0, 0.8) 50%
+          ),
+          url(images/banner-background.jpg);
+        min-height: 45rem;
+        background-size: cover;
+        background-position: center;
+      }
       #logo {
         height: auto;
-        max-width: 10%;
+        max-width: 150px;
         border-radius: 50%;
       }
       .header {
-        padding: 20px 10px;
+        padding: 20px 20px;
       }
       .header-right {
         float: right;
-        text-align: center;
-        padding: 12px;
-        font-size: 18px;
+        padding: 55px 12px;
+        font-size: 17px;
         line-height: 25px;
-        border-radius: 4px;
-        color: black;
+      }
+      #about-button,
+      #services-button,
+      #trading-button,
+      #contacts-button {
+        text-decoration: none;
+        padding: 7px;
+        margin-right: 5px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+      #about-button:hover,
+      #services-button:hover,
+      #trading-button:hover,
+      #contacts-button:hover {
+        background-color: rgba(255, 255, 255, 0.201);
       }
     </style>
     <div class="banner">
       <div>
-        <h1>
-          Empower Your Wealth: TradeWise Capital - Where Opportunity Meets
-          Expertise!
-        </h1>
+        <h1>Empower Your Wealth: TradeWise Capital</h1>
+        <p>Where Opportunity Meets Expertise!</p>
         <button>Start Trading</button>
       </div>
     </div>
     <style>
       .banner {
-        background-image: url(images/banner-background.jpg);
-        height: 300px;
-        background-size: cover;
-        background-position: top;
         text-align: center;
+        padding: 5.5rem 0 3rem;
       }
       h1 {
         font-size: 2.8em;
-        padding: 30px 0;
+        padding: 5px 0;
         font-weight: 800;
         color: white;
         margin-top: 20px;
       }
+      p {
+        font-size: 1.8em;
+        font-weight: 800;
+        color: white;
+        margin-top: 5px;
+      }
       button {
         font-size: 20px;
         display: inline-block;
-        border: 1px solid white;
+        border: 1px solid black;
         padding: 10px 20px;
         border-radius: 10px;
         cursor: pointer;
         font-weight: 300;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.7);
       }
       button:hover {
         background-color: white;
