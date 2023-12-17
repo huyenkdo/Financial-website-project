@@ -66,32 +66,50 @@
     <div class="services-content">
       <div>
         <h1>Stock Trading</h1>
-        <h2>Real-Time Trading Platform</h2>
-        <p>
-          Access to a robust platform for buying and selling stocks in
-          real-time.
-        </p>
-        <h2>Expert Analysis</h2>
-        <p>
-          In-depth market analysis and insights to make informed stock trading
-          decisions.
-        </p>
-        <h2>Portfolio Management</h2>
-        <p>Tailored strategies for portfolio optimization and growth.</p>
+        <div class="stock-content">
+          <div class="first-box">
+            <h2>Real-Time Trading Platform</h2>
+            <p>
+              Access to a robust platform for buying and selling stocks in
+              real-time.
+            </p>
+          </div>
+          <div class="second-box">
+            <h2>Expert Analysis</h2>
+            <p>
+              In-depth market analysis and insights to make informed stock
+              trading decisions.
+            </p>
+          </div>
+          <div class="third-box">
+            <h2>Portfolio Management</h2>
+            <p>Tailored strategies for portfolio optimization and growth.</p>
+          </div>
+        </div>
         <button>Learn More</button>
         <h1>Forex Trading</h1>
-        <h2>Global Currency Markets</h2>
-        <p>Trade major and exotic currency pairs in the vast forex market.</p>
-        <h2>Risk Management Solutions</h2>
-        <p>
-          Tools and strategies to manage and mitigate risks associated with
-          forex trading.
-        </p>
-        <h2>Educational Resources</h2>
-        <p>
-          TLearning materials to understand forex market dynamics and trading
-          strategies.
-        </p>
+        <div class="forex-content">
+          <div class="first-box">
+            <h2>Global Currency Markets</h2>
+            <p>
+              Trade major and exotic currency pairs in the vast forex market.
+            </p>
+          </div>
+          <div class="second-box">
+            <h2>Risk Management Solutions</h2>
+            <p>
+              Tools and strategies to manage and mitigate risks associated with
+              forex trading.
+            </p>
+          </div>
+          <div class="third-box">
+            <h2>Educational Resources</h2>
+            <p>
+              TLearning materials to understand forex market dynamics and
+              trading strategies.
+            </p>
+          </div>
+        </div>
         <button>Learn More</button>
       </div>
     </div>
@@ -99,14 +117,12 @@
       .services-content {
         padding: 1rem 3rem;
         text-align: center;
-        column-count: 3;
       }
       h1 {
         font-size: 3em;
         padding: 5px 0;
         font-weight: 900;
         color: white;
-        column-span: all;
       }
       p {
         font-size: 1.2em;
@@ -120,16 +136,51 @@
         font-weight: 800;
         color: white;
       }
-      #list-description {
-        margin-left: 35px;
+      .stock-content,
+      .forex-content {
+        display: flex;
       }
-      #conclusion {
-        margin-top: 30px;
-        font-size: 1.5em;
-        font-weight: 800;
+      .first-box {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 33% !important;
+        vertical-align: top;
+        background-color: rgba(255, 255, 255, 0.143);
+        border-radius: 10px;
+      }
+      .second-box {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 33% !important;
+        vertical-align: top;
+        margin-left: 30px;
+        background-color: rgba(255, 255, 255, 0.143);
+        border-radius: 10px;
+      }
+      .third-box {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 33% !important;
+        vertical-align: top;
+        margin-left: 30px;
+        background-color: rgba(255, 255, 255, 0.143);
+        border-radius: 10px;
       }
       button {
-        column-span: all;
+        margin-top: 3em;
+        position: relative;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 300;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      button:hover {
+        background-color: white;
       }
     </style>
   </body>
