@@ -62,29 +62,59 @@
     </style>
     <div class="main-content">
       <h1>Advanced Trading Tools at TradeWise Capital</h1>
-      <h2>Charting Software</h2>
-      <div class="charting-software">
-        <img
-          id="charting-software"
-          src="images/charting-software.png"
-          alt="Charting Software Photo"
-        />
-        <div class="charting-content-box">
-          <h3>Live Charts</h3>
-          <p>
-            Real-time graphical representations of market trends and movements
-            across various asset classes.
-          </p>
-          <h3>Technical Analysis Tools</h3>
-          <p>
-            Indicators, overlays, and drawing tools to analyze price trends,
-            patterns, and support/resistance levels.
-          </p>
-          <h3>Customizable Interface</h3>
-          <p>
-            Tailor charts to individual preferences for better analysis and
-            decision-making.
-          </p>
+      <div class="charting-box">
+        <h2>Charting Software</h2>
+        <div class="content-box-lower">
+          <img
+            id="charting-software"
+            src="images/charting-software.png"
+            alt="Charting Software Photo"
+          />
+          <div class="charting-text-box">
+            <h3>Live Charts</h3>
+            <p>
+              Real-time graphical representations of market trends and movements
+              across various asset classes.
+            </p>
+            <h3>Technical Analysis Tools</h3>
+            <p>
+              Indicators, overlays, and drawing tools to analyze price trends,
+              patterns, and support/resistance levels.
+            </p>
+            <h3>Customizable Interface</h3>
+            <p>
+              Tailor charts to individual preferences for better analysis and
+              decision-making.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="algorithm-box">
+        <h2>Algorithmic Trading</h2>
+        <div class="content-box-lower">
+          <div class="algorithm-text-box">
+            <h3>Automated Strategies</h3>
+            <p>
+              Deploy pre-defined algorithms to execute trades based on specific
+              parameters, allowing for systematic trading without constant
+              monitoring.
+            </p>
+            <h3>Backtesting Capabilities</h3>
+            <p>
+              Test algorithms using historical data to assess their performance
+              before implementation.
+            </p>
+            <h3>Customization Options</h3>
+            <p>
+              Flexibility to create, modify, and fine-tune algorithms according
+              to trading strategies.
+            </p>
+          </div>
+          <img
+            id="algorithm-trade"
+            src="images/algorithm-trade.jpeg"
+            alt="Algorithmic Trade Photo"
+          />
         </div>
       </div>
     </div>
@@ -104,12 +134,13 @@
         margin: 0;
       }
       h2 {
-        font-size: 2em;
-        padding: 1em 0;
+        font-size: 2.5em;
         font-weight: 800;
         color: white;
-        margin: 0px;
+        padding-bottom: 1.5em;
+        margin: 0;
         text-align: center;
+        display: list-item !important;
       }
       h3 {
         font-size: 1.5em;
@@ -124,19 +155,50 @@
         max-width: 50%;
         margin-left: 3em;
       }
-      .charting-software {
-        display: flex;
-        background-color: black;
+      .charting-box {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 10%,
+          rgb(56, 56, 56) 50%,
+          rgba(0, 0, 0, 0.8) 80%
+        );
         padding: 3em 0;
         align-items: center;
       }
-      .charting-content-box {
+      .content-box-lower {
+        display: flex;
+      }
+      .charting-text-box {
         vertical-align: middle;
         box-sizing: border-box;
         display: inline-block;
         text-wrap: wrap;
         margin-right: 3em;
         margin-left: 3em;
+      }
+      .algorithm-box {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 10%,
+          rgb(56, 56, 56) 50%,
+          rgba(0, 0, 0, 0.8) 80%
+        );
+        padding: 3em 0;
+        align-items: center;
+      }
+      .algorithm-text-box {
+        vertical-align: middle;
+        box-sizing: border-box;
+        display: inline-block;
+        text-wrap: wrap;
+        margin-right: 3em;
+        margin-left: 3em;
+      }
+      #algorithm-trade {
+        height: fit-content;
+        max-width: 50%;
+        margin-right: 3em;
+        border-radius: 10px;
       }
     </style>
   </body>
