@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Contacts" content="Contact us to get rich" />
+    <title>Contact Us - TradeWise Capital</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"
+        ><img id="logo" src="images/logo.png" alt="TradeWise logo"
+      /></a>
+      <div class="header-right">
+        <a id="about-button" href="about.html">About Us</a>
+        <a id="services-button" href="services.html">Services</a>
+        <a id="trading-button" href="trading-tools.html">Trading Tools</a>
+        <a id="contacts-button" href="contacts.html">Contact</a>
+      </div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          to top,
+          rgba(9, 20, 48, 0.4) 0%,
+          rgb(9, 20, 48) 60%
+        );
+        min-height: 45rem;
+      }
+      #logo {
+        height: auto;
+        max-width: 150px;
+        border-radius: 50%;
+      }
+      .header {
+        padding: 20px 20px;
+      }
+      .header-right {
+        float: right;
+        padding: 55px 12px;
+        font-size: 17px;
+        line-height: 25px;
+      }
+      #about-button,
+      #services-button,
+      #trading-button,
+      #contacts-button {
+        text-decoration: none;
+        padding: 7px;
+        margin-right: 5px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+      #about-button:hover,
+      #services-button:hover,
+      #trading-button:hover,
+      #contacts-button:hover {
+        background-color: rgba(255, 255, 255, 0.201);
+      }
+    </style>
+    <div class="main-content">
+      <div class="text-row">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="input-container">
+        <div class="styled-input wide">
+          <input type="text" required />
+          <label>Name</label>
+        </div>
+        <div class="styled-input">
+          <input type="text" required />
+          <label>Email</label>
+        </div>
+        <div class="styled-input" style="float: right">
+          <input type="text" required />
+          <label>Phone Number</label>
+        </div>
+        <div class="styled-input wide">
+          <textarea required></textarea>
+          <label>Message</label>
+        </div>
+        <button>Send Message</button>
+      </div>
+    </div>
+    <style>
+      h1 {
+        font-size: 3em;
+        padding: 5px 0;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+      }
+      input:focus ~ label,
+      textarea:focus ~ label,
+      input:valid ~ label,
+      textarea:valid ~ label {
+        font-size: 0.75em;
+        color: #999;
+        top: -5px;
+        -webkit-transition: all 0.225s ease;
+        transition: all 0.225s ease;
+      }
+      .styled-input {
+        float: left;
+        width: 293px;
+        margin: 1rem 0;
+        position: relative;
+        border-radius: 4px;
+      }
+      .styled-input label {
+        color: #999;
+        padding: 1.3rem 30px 1rem 30px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        pointer-events: none;
+      }
+      .styled-input.wide {
+        width: 650px;
+        max-width: 100%;
+      }
+      input,
+      textarea {
+        padding: 30px;
+        border: 0;
+        width: 100%;
+        font-size: 1rem;
+        background-color: #242744;
+        color: white;
+        border-radius: 4px;
+      }
+      input:focus,
+      textarea:focus {
+        outline: 0;
+      }
+      textarea {
+        width: 100%;
+        min-height: 15em;
+      }
+      .input-container {
+        width: 650px;
+        max-width: 100%;
+        margin: 20px auto 25px auto;
+        text-align: center;
+      }
+      button {
+        padding: 7px 35px;
+        border-radius: 60px;
+        background-color: #8d97aa;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.265),
+          0 2px 10px 0 rgba(0, 0, 0, 0.265);x
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+      }
+
+      button:hover {
+        transform: translateY(1px);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+          0 1px 1px 0 rgba(0, 0, 0, 0.09);
+      }
+    </style>
+  </body>
+</html>
